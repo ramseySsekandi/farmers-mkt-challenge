@@ -22,14 +22,14 @@ const Homepage = () => {
         </div>
         {/* ICONS */}
         <div className="flex h-full justify-center items-center gap-2">
-          <div className="rounded-full border ">
-            <Bell size={32} color='#305cde' />
+          <div className="rounded-full border flex justify-center items-center p-2 ">
+            <Bell size={24} color='#305cde' />
           </div>
-          <div className="rounded-full border">
-            <MessageSquareMore size={32} color='#305cde' />
+          <div className="rounded-full border flex justify-center items-center p-2">
+            <MessageSquareMore size={24} color='#305cde' />
           </div>
-          <div className="rounded-full border p-1">
-            <ShoppingCart size={32} color='#305cde' />
+          <div className="rounded-full border flex justify-center items-center p-2">
+            <ShoppingCart size={24} color='#305cde' />
           </div>
         </div>
       </div>
