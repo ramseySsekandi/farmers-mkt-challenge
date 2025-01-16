@@ -4,8 +4,10 @@ import { Bell, MessageSquareMore, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
 import Product from '@/components/Product'
 import Footer from '@/components/Footer'
+import { fetchProducts } from '@/actions/products'
 
-const Homepage = () => {
+const Homepage = async () => {
+  const products = await fetchProducts()
   return (
     <div className='h-svh w-screen px-4 py-2 space-y-2'>
       {/* HEADER */}
@@ -45,11 +47,11 @@ const Homepage = () => {
       </div>
       {/* PRODUCTS */}
       <div className="grid gap-1">
-      <Product />
-      <Product />
-      <Product />
-      <Product />
-      <Product />
+      {
+        products.map((product) => (
+          <Product key={product.id} product={product}/>
+        ))
+      }
       </div>
       {/* FOOTER */}
       <Footer />
