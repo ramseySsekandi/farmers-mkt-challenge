@@ -25,7 +25,7 @@ const Carousel = () => {
       scrollbar={{draggable: true}}
       // onSlideChange={() => console.log('slide change')}
       // onSwiper={(swiper) => console.log(swiper)}
-      className='w-[100%] h-[100vh] flex justify-center items-center'
+      className='w-[100%] h-[100svh] flex justify-center items-center'
       loop={true}
       modules={[Pagination, Navigation]}
     >
