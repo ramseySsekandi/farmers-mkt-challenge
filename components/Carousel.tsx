@@ -13,7 +13,9 @@ import Image from 'next/image';
 import Link from "next/link";
 import { SkipForward } from "lucide-react";
 
-export default () => {
+import React from 'react'
+
+const Carousel = () => {
   return (
     <Swiper
       spaceBetween={50}
@@ -29,7 +31,7 @@ export default () => {
     >
       <SwiperSlide className='w-full h-full'>
         <div className="w-full h-[70%] flex justify-center items-center">
-          <Image src='/mango-table.jpg' className='object-cover w-full h-full' width={100} height={200} alt='hi'/>
+          <Image src='/mango-table.jpg' className='object-contain w-full h-full' width={100} height={200} alt='hi'/>
         </div>
         <h2 className="text-2xl font-bold text-center">Farmers Market</h2>
         <p className='text-sm text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -63,5 +65,7 @@ export default () => {
 
         </SwiperSlide>
     </Swiper>
-  );
+  )
 }
+
+export default Carousel
