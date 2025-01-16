@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Bell, MessageSquareMore, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
 import Product from '@/components/Product'
+import Footer from '@/components/Footer'
 
 const Homepage = () => {
   return (
@@ -50,6 +51,8 @@ const Homepage = () => {
       <Product />
       <Product />
       </div>
+      {/* FOOTER */}
+      <Footer />
     </div>
   )
 }
