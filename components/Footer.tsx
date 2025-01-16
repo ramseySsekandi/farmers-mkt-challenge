@@ -18,31 +18,12 @@ const Footer = () => {
             {/* FOOTER ICONS */}
             {
                 footerLinks.map((item) =>(
-                <Link href={item.url} className={`${pathName === item.url ? 'bg-blue-700 rounded-full p-2 text-white':''} flex flex-col justify-center items-center`} key={item.label}>
+                <Link href={item.url} className={`${pathName === item.url ? 'text-blue-700':''} flex flex-col justify-center items-center`} key={item.label}>
                     {item.icon}
                     <p>{item.label}</p>
                 </Link>
                 ))
             }
-            {/* <div className="">
-                <House />
-                <p>Home</p>
-            </div>
-            <div className="">
-                <SprayCan />
-                <p>Fresh</p>
-            </div>
-            <div className="">
-                <Leaf />
-            </div>
-            <div className="">
-                <ShoppingCart />
-                <p>Cart</p>
-            </div>
-            <div className="">
-                <UsersRound />
-                <p>Users</p>
-            </div> */}
         </div>
   )
 }
