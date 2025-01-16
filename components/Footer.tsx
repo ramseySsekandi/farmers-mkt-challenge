@@ -18,7 +18,7 @@ const Footer = () => {
             {/* FOOTER ICONS */}
             {
                 footerLinks.map((item) =>(
-                <Link href={item.url} className={`${pathName === item.url ? 'bg-blue-500 rounded-full p-2 text-white':''} flex flex-col justify-center items-center`} key={item.label}>
+                <Link href={item.url} className={`${pathName === item.url ? 'bg-blue-700 rounded-full p-2 text-white':''} flex flex-col justify-center items-center`} key={item.label}>
                     {item.icon}
                     <p>{item.label}</p>
                 </Link>
