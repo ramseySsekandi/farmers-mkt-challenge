@@ -11,3 +11,13 @@ export interface IProductProp {
     updatedAt: string,
     categoryId: string
   }
+
+  export interface ICategory {
+      id: string,
+      title: string,
+      slug: string,
+      image: string,
+      description: string,
+      createdAt: string,
+      updatedAt: string
+  }
