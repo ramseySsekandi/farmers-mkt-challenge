@@ -4,7 +4,7 @@ import React from 'react'
 
 const Product = ({product}: {product:IProductProp}) => {
   return (   
-<div className="w-full max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div className="w-full mb-2.5 max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <div className='w-full h-40 relative p-2'>
         <img className="rounded-xl shadow w-full h-full object-cover" src={product.images[0]} alt="product image" />
     </div>
