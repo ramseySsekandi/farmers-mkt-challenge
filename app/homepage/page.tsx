@@ -46,7 +46,7 @@ const Homepage = async () => {
         <Link href='/products' className='text-blue-500'>See All</Link>
       </div>
       {/* PRODUCTS */}
-      <div className="grid gap-1">
+      <div className="grid grid-cols-2 gap-1">
       {
         products.map((product) => (
           <Product key={product.id} product={product}/>
